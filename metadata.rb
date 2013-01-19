@@ -11,3 +11,4 @@ depends 'ubuntu'
 depends 'users', '1.1.2' # this version works with chef solo search
 depends 'sudo'
 depends 'postgresql'
+depends 'ruby_build'
