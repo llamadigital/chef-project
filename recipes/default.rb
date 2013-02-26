@@ -6,12 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 
-include_recipe 'project::set_locale'
-
 include_recipe 'apt'
 
 case node['platform']
 when 'ubuntu'
+  include_recipe 'project::set_locale'
   include_recipe 'ubuntu'
 when 'debian'
 end
