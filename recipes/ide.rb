@@ -1,9 +1,7 @@
 %w[
   htop tmux vim tree git ack-grep exuberant-ctags curl
 ].each do |name|
-  package name do
-    action :install
-  end
+  package name
 end
 
 link '/usr/local/bin/ack' do
