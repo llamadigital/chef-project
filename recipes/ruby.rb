@@ -7,7 +7,7 @@ execute 'update rubygems' do
   environment 'REALLY_GEM_UPDATE_SYSTEM' => 'true'
 end
 
-gem_package gem_name do
+gem_package 'bundler' do
   gem_binary '/usr/bin/gem'
   version '1.2.5'
   action :install
