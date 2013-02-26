@@ -2,7 +2,7 @@ package 'ruby1.9.1-full'
 package 'ruby1.9.1-dev'
 
 execute 'update rubygems' do
-  command '/usr/bin/gem update --system 1.8.25'
+  command '/usr/bin/gem update --system'
   user 'root'
   environment 'REALLY_GEM_UPDATE_SYSTEM' => 'true'
 end
