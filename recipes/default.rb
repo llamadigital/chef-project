@@ -8,10 +8,10 @@
 
 include_recipe 'apt'
 include_recipe 'build-essential'
+include_recipe 'project::set_locale'
 
 case node['platform']
 when 'ubuntu'
-  include_recipe 'project::set_locale'
   include_recipe 'ubuntu'
   include_recipe 'users::sysadmins'
   # include_recipe 'sudo' # TODO: this is having a problem with the config
