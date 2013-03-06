@@ -1,5 +1,5 @@
 %w[
-  htop tmux vim tree git ack-grep exuberant-ctags curl
+  htop tmux vim tree git ack-grep exuberant-ctags curl keychain
 ].each do |name|
   package name
 end
